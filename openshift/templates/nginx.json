@@ -200,8 +200,23 @@
                   "limits": {
                     "memory": "${MEMORY_LIMIT}"
                   }
-                }
+                },
+                "volumeMounts": [
+                  { 
+                    "name": "nginx-config-volume",
+                    "mountPath": "/etc/nginx/nginx.conf.default",
+                    "subPath": "nginx.conf"
+                  }
+                ]
               }
+            ],
+            "volumes": [
+              {
+                "name": "nginx-config-volume",
+                "configMap": {
+                  "name": "${NAME}-config"
+                }
+              }  
             ]
           }
         }
