@@ -204,7 +204,7 @@
                 "volumeMounts": [
                   { 
                     "name": "nginx-config-volume",
-                    "mountPath": "/etc/nginx/nginx.conf.default",
+                    "mountPath": "/etc/nginx/nginx.conf",
                     "subPath": "nginx.conf"
                   }
                 ]
@@ -323,8 +323,8 @@
 # Default server configuration
 #
 server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
+        listen 8080 default_server;
+        listen [::]:8080 default_server;
 
         # SSL configuration
         #
