@@ -257,7 +257,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/nginx-ex.git"
+      "value": "https://github.com/Dr-pep4/project.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
